@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadCourse()">
+
+<header class="header-bar">
+  <div class="header-left">
+    <h1 id="courseTitle"></h1>
+
+    <div class="breadcrumbs">
+      <span onclick="goToCourses()">Courses</span>
+      <span class="separator">›</span>
+      <span id="courseCrumb"></span>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="goBackToCourses()">
+    ← Back to Courses
+  </button>
+</header>
+
+<div class="container" id="chapterList"></div>
+
+<div class="container card">
+  <button onclick="goToAssessment()">Take Final Assessment</button>
+  <p id="assessmentMsg" style="color:red; margin-top:8px;"></p>
+</div>
+
+<!-- IMPORTANT: LOAD IN THIS ORDER -->
+<script src="js/courseData.js"></script>
+<script src="js/course.js"></script>
+
+<script>
+  function goToCourses() {
+    window.location.href = "courses.html";
+  }
+  function goBackToCourses() {
+    window.location.href = "courses.html";
+  }
+
+
+function goToAssessment() {
+  const courseKey = localStorage.getItem("currentCourse");
+  const completed = JSON.parse(localStorage.getItem(courseKey)) || [];
+  const total = COURSES[courseKey].chapters.length;
+
+  const msg = document.getElementById("assessmentMsg");
+
+  if (completed.length < total) {
+    msg.innerText = "❌ Complete all chapters before taking the assessment.";
+    return;
+  }
+
+  // 🔥 ENSURE courseKey is preserved
+  localStorage.setItem("currentCourse", courseKey);
+
+  window.location.href = "assessment.html";
+}
+
+
+</script>
+
+</body>
+</html>

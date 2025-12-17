@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Lesson</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initVideoPage()">
+
+<header class="header-bar">
+  <div class="header-left">
+    <h1 id="courseName"></h1>
+
+    <div class="breadcrumbs">
+      <span onclick="goToCourses()">Courses</span>
+      <span class="separator">›</span>
+      <span onclick="goToChapters()" id="courseCrumb"></span>
+      <span class="separator">›</span>
+      <span id="breadcrumbChapter"></span>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="goBackToChapters()">
+    ← Back to Chapters
+  </button>
+</header>
+
+<div class="container card">
+  <div id="player"></div>
+  <p id="videoStatus"></p>
+</div>
+
+<!-- YouTube API -->
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<!-- IMPORTANT: ORDER -->
+<script src="js/courseData.js"></script>
+<script src="js/video.js"></script>
+
+<script>
+  function goToCourses() {
+    window.location.href = "courses.html";
+  }
+  function goToChapters() {
+    window.location.href = "course.html";
+  }
+  function goBackToChapters() {
+    window.location.href = "course.html";
+  }
+</script>
+
+</body>
+</html>

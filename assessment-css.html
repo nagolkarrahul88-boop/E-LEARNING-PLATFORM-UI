@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Final Assessment – CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header-bar">
+  <div class="header-left">
+    <h1>CSS Final Assessment</h1>
+  </div>
+
+  <button class="back-btn" onclick="goBack()">← Back</button>
+</header>
+
+<div class="container card">
+  <form id="quizForm">
+
+    <h3>1. Which selector selects all &lt;p&gt; elements inside a &lt;div&gt;?</h3>
+    <label><input type="radio" name="q1" value="a"> div + p</label><br>
+    <label><input type="radio" name="q1" value="b"> div &gt; p</label><br>
+    <label><input type="radio" name="q1" value="c"> div p</label><br>
+    <label><input type="radio" name="q1" value="d"> div ~ p</label>
+
+    <h3>2. Which CSS combinator selects the immediate next sibling element?</h3>
+    <label><input type="radio" name="q2" value="a"> &gt;</label><br>
+    <label><input type="radio" name="q2" value="b"> +</label><br>
+    <label><input type="radio" name="q2" value="c"> ~</label><br>
+    <label><input type="radio" name="q2" value="d"> space</label>
+
+    <h3>3. Which pseudo-class is used when an input field is focused?</h3>
+    <label><input type="radio" name="q3" value="a"> :hover</label><br>
+    <label><input type="radio" name="q3" value="b"> :active</label><br>
+    <label><input type="radio" name="q3" value="c"> :focus</label><br>
+    <label><input type="radio" name="q3" value="d"> :checked</label>
+
+    <h3>4. Which pseudo-element is used to insert content before an element?</h3>
+    <label><input type="radio" name="q4" value="a"> :before</label><br>
+    <label><input type="radio" name="q4" value="b"> ::after</label><br>
+    <label><input type="radio" name="q4" value="c"> ::before</label><br>
+    <label><input type="radio" name="q4" value="d"> :first-line</label>
+
+    <h3>5. Which CSS unit is relative to the viewport width?</h3>
+    <label><input type="radio" name="q5" value="a"> em</label><br>
+    <label><input type="radio" name="q5" value="b"> %</label><br>
+    <label><input type="radio" name="q5" value="c"> vw</label><br>
+    <label><input type="radio" name="q5" value="d"> px</label>
+
+    <p id="result"></p>
+
+    <div style="display:flex; gap:15px; flex-wrap:wrap; align-items:center;">
+      <button id="submitBtn" type="button" onclick="submitAssessment()" disabled>
+        Submit Assessment
+      </button>
+
+      <span id="timerText" style="color:#dc2626; font-size:14px;"></span>
+
+      <button
+        id="viewCertBtn"
+        type="button"
+        style="display:none"
+        onclick="goToCertificate()"
+      >
+        View Certificate
+      </button>
+    </div>
+
+    <p id="retryInfo"></p>
+  </form>
+</div>
+
+<script>
+  localStorage.setItem("currentCourse", "CSS");
+</script>
+<script src="js/assessment.js"></script>
+
+<script>
+  function goBack() {
+    window.location.href = "courses.html";
+  }
+</script>
+
+</body>
+</html>

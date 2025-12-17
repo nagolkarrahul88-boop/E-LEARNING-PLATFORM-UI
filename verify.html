@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate Verification</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header-bar">
+  <div class="header-left">
+    <h1>Certificate Verification</h1>
+  </div>
+
+  <button class="back-btn" onclick="goHome()">← Back</button>
+</header>
+
+<div class="container card">
+  <h3>Enter Certificate ID</h3>
+
+  <input
+    type="text"
+    id="verifyId"
+    placeholder="CODTECH-2025-XXXXXX"
+    style="width:100%; padding:10px; margin:15px 0;"
+  />
+
+  <button onclick="verifyCertificate()">Verify</button>
+
+  <div id="verifyResult" style="margin-top:20px; font-size:15px;"></div>
+
+</div>
+
+<script src="js/verify.js"></script>
+<script>
+  function goHome() {
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html>

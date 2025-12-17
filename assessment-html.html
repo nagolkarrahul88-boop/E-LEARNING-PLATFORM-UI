@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Final Assessment – HTML</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script>localStorage.setItem("currentCourse","HTML");</script>
+
+<h1>HTML Final Assessment</h1>
+
+<form>
+    <h3>1. What does HTML stand for?</h3>
+    <label><input type="radio" name="q1" value="a"> HighText Machine Language</label><br>
+    <label><input type="radio" name="q1" value="b"> HyperText Markup Language</label><br>
+    <label><input type="radio" name="q1" value="c"> HyperTool Multi Language</label><br>
+    <!-- Correct: b -->
+    
+    <h3>2. Which tag is used for hyperlinks?</h3>
+    <label><input type="radio" name="q2" value="a"> &lt;link&gt;</label><br>
+    <label><input type="radio" name="q2" value="b"> &lt;a&gt;</label><br>
+    <label><input type="radio" name="q2" value="c"> &lt;href&gt;</label><br>
+    <!-- Correct: b -->
+    
+    <h3>3. Which tag is used for line break?</h3>
+    <label><input type="radio" name="q3" value="a"> &lt;br&gt;</label><br>
+    <label><input type="radio" name="q3" value="b"> &lt;lb&gt;</label><br>
+    <label><input type="radio" name="q3" value="c"> &lt;break&gt;</label><br>
+    <!-- Correct: a -->
+    
+
+<p id="result"></p>
+
+<button id="submitBtn" type="button" onclick="submitAssessment()" disabled>
+Submit Assessment</button>
+
+<span id="timerText"></span>
+
+<button id="viewCertBtn" style="display:none" onclick="goToCertificate()">
+View Certificate</button>
+
+<p id="retryInfo"></p>
+</form>
+
+<script src="js/assessment.js"></script>
+</body>
+</html>

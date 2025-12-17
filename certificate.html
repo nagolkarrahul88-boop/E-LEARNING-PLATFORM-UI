@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Completion Certificate</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadCertificate()">
+  <header class="header-bar">
+    <h1 class="header-title">Certificate</h1>
+    <button class="back-btn" onclick="goBack()">← Back</button>
+    
+  </header>
+  
+
+<div class="cert-page">
+
+  <h2 class="cert-title-top">CODTECH</h2>
+
+  <p id="certMessage"
+     style="color:#dc2626; text-align:center; margin-bottom:15px;">
+  </p>
+
+  <!-- CERTIFICATE -->
+  <div class="certificate" id="certificate" style="display:none;">
+
+    <h1 class="cert-heading">CERTIFICATE</h1>
+    <h3 class="cert-sub">OF COMPLETION</h3>
+
+    <p class="cert-text">
+      THIS CERTIFICATE IS PROUDLY PRESENTED TO
+    </p>
+
+    <h2 class="cert-name" id="studentName"></h2>
+
+    <p class="cert-desc">
+      For successfully completing the
+      <strong><span id="courseCertName"></span></strong><br>
+      Internship Program conducted by CODTECH.
+    </p>
+
+    <div class="cert-footer">
+      <div>
+        <p><strong>Date of Completion:</strong></p>
+        <p id="certDate"></p>
+      </div>
+
+      <div>
+        <p><strong>Certificate ID:</strong></p>
+        <p id="certId"></p>
+      </div>
+    </div>
+
+    <!-- SIGNATURE -->
+    <div class="cert-signature-area">
+      <span class="signature-text">Authorized Signature</span>
+      <p class="signature-name">CODTECH</p>
+    </div>
+
+  </div>
+
+  <!-- DOWNLOAD -->
+  <button class="download-btn" onclick="downloadCertificate()">
+    Download Certificate
+  </button>
+
+</div>
+
+<!-- IMPORTANT SCRIPT ORDER -->
+<script src="js/courseData.js"></script>
+<script src="js/certificate.js"></script>
+<script>
+  function goBack() {
+    window.location.href = "courses.html";
+  }
+</script>
+
+
+</body>
+</html>

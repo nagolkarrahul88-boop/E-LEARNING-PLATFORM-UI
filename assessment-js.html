@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Final Assessment – JavaScript</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script>localStorage.setItem("currentCourse","JS");</script>
+
+<h1>JavaScript Final Assessment</h1>
+
+<form>
+<h3>1. End of JS statement?</h3>
+<label><input type="radio" name="q1" value="a"> :</label><br>
+<label><input type="radio" name="q1" value="b"> ;</label><br>
+<label><input type="radio" name="q1" value="c"> .</label><br>
+<label><input type="radio" name="q1" value="d"> ,</label>
+
+<h3>2. Non-reassignable variable?</h3>
+<label><input type="radio" name="q2" value="a"> var</label><br>
+<label><input type="radio" name="q2" value="b"> let</label><br>
+<label><input type="radio" name="q2" value="c"> const</label><br>
+<label><input type="radio" name="q2" value="d"> static</label>
+
+<h3>3. True/false type?</h3>
+<label><input type="radio" name="q3" value="a"> String</label><br>
+<label><input type="radio" name="q3" value="b"> Number</label><br>
+<label><input type="radio" name="q3" value="c"> Boolean</label><br>
+<label><input type="radio" name="q3" value="d"> Object</label>
+
+<h3>4. Strict equality?</h3>
+<label><input type="radio" name="q4" value="a"> =</label><br>
+<label><input type="radio" name="q4" value="b"> ==</label><br>
+<label><input type="radio" name="q4" value="c"> ===</label><br>
+<label><input type="radio" name="q4" value="d"> !=</label>
+
+<h3>5. Conditional execution?</h3>
+<label><input type="radio" name="q5" value="a"> for</label><br>
+<label><input type="radio" name="q5" value="b"> while</label><br>
+<label><input type="radio" name="q5" value="c"> if</label><br>
+<label><input type="radio" name="q5" value="d"> switch</label>
+
+<p id="result"></p>
+
+<button id="submitBtn" type="button" onclick="submitAssessment()" disabled>
+Submit Assessment</button>
+
+<span id="timerText"></span>
+
+<button id="viewCertBtn" style="display:none" onclick="goToCertificate()">
+View Certificate</button>
+
+<p id="retryInfo"></p>
+</form>
+
+<script src="js/assessment.js"></script>
+</body>
+</html>
