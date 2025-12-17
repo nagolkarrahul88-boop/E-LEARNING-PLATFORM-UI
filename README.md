@@ -72,11 +72,11 @@ The E‑Learning Website project demonstrates my ability to design and develop a
 
 
 #OUTPUT
-<img width="1349" height="659" alt="Image" src="https://github.com/user-attachments/assets/a0ff71b9-756e-4b01-b8c7-e3adfd6c5d0f" />
-<img width="1351" height="661" alt="Image" src="https://github.com/user-attachments/assets/96d775fe-7e7d-489a-9dc2-3a95a80f929d" />
-<img width="1365" height="659" alt="Image" src="https://github.com/user-attachments/assets/451a3f08-8c34-49d4-ad7f-3433cdbe2ec6" />
-<img width="1325" height="660" alt="Image" src="https://github.com/user-attachments/assets/db547945-fc5b-4faa-af6a-a3aaa5860a5e" />
-<img width="1348" height="659" alt="Image" src="https://github.com/user-attachments/assets/6248d85b-18db-4bc9-a710-e3fe664c3f76" />
-<img width="1349" height="658" alt="Image" src="https://github.com/user-attachments/assets/27c2ae54-a750-4fe7-a489-851494929333" />
-<img width="1350" height="658" alt="Image" src="https://github.com/user-attachments/assets/e2f80383-f3ef-419c-a3d8-7f204977a276" />
 <img width="1365" height="657" alt="Image" src="https://github.com/user-attachments/assets/9fcf3c09-53c5-4e24-994f-ef1081e5c729" />
+<img width="1350" height="658" alt="Image" src="https://github.com/user-attachments/assets/e2f80383-f3ef-419c-a3d8-7f204977a276" />
+<img width="1349" height="658" alt="Image" src="https://github.com/user-attachments/assets/27c2ae54-a750-4fe7-a489-851494929333" />
+<img width="1348" height="659" alt="Image" src="https://github.com/user-attachments/assets/6248d85b-18db-4bc9-a710-e3fe664c3f76" />
+<img width="1325" height="660" alt="Image" src="https://github.com/user-attachments/assets/db547945-fc5b-4faa-af6a-a3aaa5860a5e" />
+<img width="1365" height="659" alt="Image" src="https://github.com/user-attachments/assets/451a3f08-8c34-49d4-ad7f-3433cdbe2ec6" />
+<img width="1351" height="661" alt="Image" src="https://github.com/user-attachments/assets/96d775fe-7e7d-489a-9dc2-3a95a80f929d" />
+<img width="1349" height="659" alt="Image" src="https://github.com/user-attachments/assets/a0ff71b9-756e-4b01-b8c7-e3adfd6c5d0f" />
